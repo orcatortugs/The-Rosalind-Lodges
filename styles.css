@@ -11,15 +11,16 @@
 }
 a {
   padding: 10px 30px !important;
-  margin-top: 20%;
-  font-family: Lithos Pro !important;
+  margin-top: 2.5rem;
+  font-family: "Roboto" !important;
   color: white !important;
   text-shadow: black 0px 0px 2px !important; /* color offset-x offset-y blur-radius */
-  font-size: 18 !important;
+  font-size: 2rem !important;
   text-decoration: none;
   position: relative;
   display: inline-block;
   padding-bottom: 2px;
+  margin-right: 5%;
   background-color: transparent;
 }
 a:hover {
@@ -32,7 +33,6 @@ a::after {
   bottom: 0;
   width: 100%;
   height: 2px;
-  content: '';
   display: block;
   border-bottom: 2px solid #ffffff;
   transform: scaleX(0);
@@ -47,9 +47,68 @@ a:hover::after {
 /*First Image*/
 body{
   background: url(Assets/Background.jpeg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+}
+/*Input*/
+.box {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.box.fixed {
+  position: fixed;
+  left: 2rem;
+  top: -1rem;
+  z-index: 1;
+}
+.textAboveInput{
+  font-family: Dancing Script;
+  color:white;
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
+  text-align: center;
+  padding-top: 10%;
+  font-size: 6rem;
+}
+.form-container {
+  display: flex;
+  justify-content: center; /* center items horizontally */
+  align-items: center; /* center items vertically */
+  padding-top: 10%;
+  padding-bottom: 25%;
+}
+
+.input-field {
+  padding: 2.273rem;
+  border-radius: 20px 0px 0px 20px;
+  border: 0px solid #ccc;
+  background-color: #fff;
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+.input-field1 {
+  padding: 2rem;
+  border-radius: 0px 0px 0px 0px;
+  border: 0px solid #ccc;
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+
+.button {
+  padding: 2rem 2rem;
+  background-color: #242424;
+  color: white;
+  border: none;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+  font-family: "Roboto";
+  font-size: 2rem;
+}
+
+.button:hover {
+  background-color: #585858;
 }
 
 /*Para 1*/
@@ -61,7 +120,7 @@ body{
   margin-top: 15%;
   color: #fff;
   text-shadow: black 0px 0px 2px; /* color offset-x offset-y blur-radius */
-  font-family: nyala;
+  font-family: "Roboto";
   font-size: 44px;
 }
     body::-webkit-scrollbar-track
@@ -82,7 +141,7 @@ body::-webkit-scrollbar-thumb
 }
 @media(max-width: 720px){
   body{
-    background-size: 100% 100%;
+    background-size: cover;
   }
   .navbar-collapse{
   background: #000000;

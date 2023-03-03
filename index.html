@@ -12,6 +12,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+          
   </head>
 
   <!-- Fill in header when scrolling -->
@@ -20,10 +22,14 @@
   <body>
 
      
+ <!--Check in-->
+ 
 
 
       <!-- Navbar -->
+
       <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+        <!--Navbar Choices-->
         <div class="navbar-header">
        <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
          <span class="icon-bar"></span>
@@ -41,6 +47,18 @@
      </div>
      <div class="collapse navbar-right navbar-collapse" id="myNavbar">
          <ul class="nav navbar-nav">
+          <li><div class="box-navbar">
+            <div class="form-container-navbar">
+              <select class="input-field-navbar">
+                <option value="" class="room-type-navbar" disabled selected >What type of room would you like?</option>
+                <option value="single">Single Room</option>
+                <option value="double">Double Room</option>
+                <option value="suite">Suite</option>
+              </select>
+              <input type="date" class="input-field1-navbar" placeholder="Select a date">
+              <button type="submit" class="button-navbar">Submit</button>
+            </div>
+          </div></li>
              <li><a href="url">Home</a></li>
              <li><a href="url">About</a></li>
              <li><a href="url">Contact</a></li>
@@ -55,16 +73,18 @@
       <div class="box">
         <div class="form-container">
           <select class="input-field">
-            <option value="" disabled selected>What type of room would you like?</option>
-            <option value="option1"><img src="Assets/FBLA_HorizontalLogo_cropped-01.png" alt="Option 1"><span>Option 1</span></option>
-            <option value="option2"><img src="Assets/FBLA_HorizontalLogo_cropped-01.png" alt="Option 2"><span>Option 2</span></option>
-            <option value="option3"><img src="Assets/FBLA_HorizontalLogo_cropped-01.png"><span>Option 3</span></option>
+            <option value="" class="room-type" disabled selected >What type of room would you like?</option>
+            <option value="single">Single Room</option>
+            <option value="double">Double Room</option>
+            <option value="suite">Suite</option>
           </select>
           <input type="date" class="input-field1" placeholder="Select a date">
           <button type="submit" class="button">Submit</button>
         </div>
       </div>
       </div>
-   <div class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+   <div class = "exploreHotel">
+    <h1 class = "oneHotelLimitless">One Hotel, Limitless Possibilities</h1>
+   </div>
   </body>
   </html> 

@@ -8,9 +8,9 @@
 
       //Move to top left after scorlling
       $(window).scroll(function() {
-        if ($(this).scrollTop() > 200) { // adjust the threshold as needed
-          $('.box').addClass('fixed');
+        if ($(this).scrollTop() > 600) { // adjust the threshold as needed
+          $('.box-navbar').addClass('show');
         } else {
-          $('.box').removeClass('fixed');
+          $('.box-navbar').removeClass('show');
         }
       });

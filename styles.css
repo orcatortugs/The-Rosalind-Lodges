@@ -1,20 +1,11 @@
-/*Navbar*/
-.navbar {
-  background: transparent !important;
-  transition: 0.5s;
-}
-
-.navbar.scrolled {
-  background: #000 !important;
-  transition: 0.5s;
-}
+/*A tag*/
 a {
   padding: 10px 30px !important;
   margin-top: 2.5rem;
-  font-family: "Roboto" !important;
-  color: white !important;
-  text-shadow: black 0px 0px 2px !important; /* color offset-x offset-y blur-radius */
-  font-size: 2rem !important;
+  font-family: "Roboto" ;
+  color: white ;
+  text-shadow: black 0px 0px 2px ; /* color offset-x offset-y blur-radius */
+  font-size: 2rem ;
   text-decoration: none;
   position: relative;
   display: inline-block;
@@ -24,6 +15,7 @@ a {
 }
 a:hover {
   background-color: transparent !important;
+  color: #fff;
 }
 a::after {
   content: '';
@@ -41,6 +33,21 @@ a::after {
 a:hover::after {
   transform: scaleX(1);
 }
+
+/*Navbar*/
+.navbar {
+  background: transparent !important;
+  transition: 0.5s;
+}
+
+.navbar.scrolled {
+  background: #000 !important;
+  transition: 0.5s;
+border-width: 4px;
+border-style: solid;
+}
+
+
 
 /*NAVBAR VERSION*/
 .box-navbar {
@@ -60,12 +67,12 @@ a:hover::after {
 
 .form-container-navbar {
   display: flex;
-  padding-bottom: 25%;
 }
 
 /*Room Type*/
 .input-field-navbar {
-  padding: 2.27rem;
+  height: 7rem;
+  padding-left: 2.27rem;
   border-radius: 20px 0px 0px 20px;
   border: 0px solid #ccc;
   background-color: #fff;
@@ -75,7 +82,7 @@ a:hover::after {
 
 /*Date Picker*/
 .input-field1-navbar {
-  padding: 2rem;
+  height: 7rem;
   border-radius: 0px 0px 0px 0px;
   border: 0px solid #ccc;
   font-family: "Roboto";
@@ -84,6 +91,7 @@ a:hover::after {
 
 /*Button*/
 .button-navbar {
+  height: 7rem;
   padding: 2rem 2rem;
   background-color: #242424;
   color: white;
@@ -149,18 +157,19 @@ body{
 
 /*Room Type*/
 .input-field {
-  padding: 2.26rem;
+  height: 7rem;
+  padding-left: 2rem;
   border-radius: 20px 0px 0px 20px;
-  border: 0px solid #ccc;
+  border-color: 0px solid #ccc;
   background-color: #fff;
   font-family: "Roboto";
   font-size: 2rem;
+  border: 2px;
 }
 
 /*Date Picker*/
 .input-field1 {
-  padding: 2rem;
-  border-radius: 0px 0px 0px 0px;
+  height: 7rem;
   border: 0px solid #ccc;
   font-family: "Roboto";
   font-size: 2rem;
@@ -168,6 +177,7 @@ body{
 
 /*Button*/
 .button {
+  height: 7rem;
   padding: 2rem 2rem;
   background-color: #242424;
   color: white;
@@ -241,13 +251,11 @@ body::-webkit-scrollbar-thumb
     background-size: cover;
   }
   .navbar-default {
-    background-color: rgb(255, 255, 255) !important;
-    border-color: white !important;
-    transform: translateY(50%) !important;
-    transform: translateX(-50%);
+    background-image: url(data:image/jpeg;base64,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);
   }
   .navbar-collapse{
   background: #000000;
+  border: none;
 }
   .para{
     min-height: 800px;
@@ -257,11 +265,48 @@ body::-webkit-scrollbar-thumb
 /* First Cover */
 .exploreHotel{
   width: 100%;
-  height: 100%;
+  height: 100rem;
   background-color: whitesmoke;
 }
 .oneHotelLimitless{
   color: black;
   font-family: "Roboto";
-  padding: 6rem;
+  padding-top: 6rem;
+  padding-left: 6rem;
+}
+.image-container {
+  display: flex;
+  transform: translateY(-10%);
+}
+.promotionPara{
+  font-family: Roboto;
+  color: #000;
+  font-size: 2rem;
+  height: 10rem;
+  width: 30rem;
+  transform: translateY(10rem);
+  margin-left: 20rem;
+  text-align: center;
+}
+.rounded-image {
+  border-radius: 40px;
+  width: 40rem;
+  height: 30rem;
+  margin: 2rem;
+  transform: translateY(90%);
+  margin-top: 5rem;
+  margin-left: 15rem;
+  margin-bottom: 0rem;
+  object-fit: fill;
+  transition: .5s ease;
+}
+.rounded-image:hover{
+  opacity: .5;
+}
+.rounded-image-vert {
+  border-radius: 40px;
+  width: 40rem;
+  height: 60rem;
+  margin: 2rem;
+  object-fit: fill;
 }

@@ -30,7 +30,7 @@ function searchToRoom() {
   date = document.querySelector(".input-field1-navbar").value;
 alert(date);
   // Store the data in cookie
-  document.cookie.split(";").forEach(function(c) { document.cookie = c.replace(/^ +/, "").replace(/=.*/, "=;expires=" + new Date().toUTCString() + ";path=/"); });
+  
 
   // Redirect to the booking page
   window.location.href = "booking.html";

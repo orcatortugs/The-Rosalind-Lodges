@@ -1,0 +1,134 @@
+</div> 
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="bookingStyles.css" />  
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+     <script src='script.js'></script>
+</head>
+
+<body>
+
+    <!-- Navbar USE THIS -->
+    <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+        <div class="navbar-header">
+       <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>                        
+       </button>
+       <div id="myMenu">
+        <div class="myWrapper">
+          <nav>
+          <a href="index.html"><img src= "Assets/letterR.png" height="50rem" width="50rem" style= "margin: 15px 0px 0px 15px;"  /></a>
+          </nav>
+        </div>
+      </div>
+      
+     </div>
+     <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+         <ul class="nav navbar-nav">
+             <li><a href="booking.html" class = "navbarText">Book a Room</a></li>
+             <li><a href="url" class = "navbarText">Amenities</a></li>
+             <li><a href="url" class = "navbarText">Discover</a></li>
+             <li><a href="url" class = "navbarText" id = "accLink">Log In or Sign Up</a></li>
+         </ul>
+     </div>
+   </div>
+
+   <!--Opening Title-->
+    <!-- Create a container for the header -->
+    <div class="container-fluid bg-dark py-5" style="padding-top: 10rem;">
+        <!-- Create a row for the header content -->
+        <div class="row" style="border-bottom: 2px solid #b3b3b3;">
+          <!-- Create a column for the header text -->
+          <div class="col-md-6 text-center text-md-left">
+            <h1 class="display-3 text-light">Let The Journey Begin!</h1>
+          </div>
+        </div>
+      </div>
+
+      <!--Table of options-->
+      <div class="container mt-5" style = "padding-top: 2rem;">
+		<table class="table">
+			<thead>
+				<tr>
+					<th>Check-In Date</th>
+					<th>Check-Out Date</th>
+					<th>Room Type</th>
+					<th>Bed Configuration</th>
+					<th>Number of Rooms</th>
+					<th>Amenities</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><input type="date" class="form-control"></td>
+					<td><input type="date" class="form-control"></td>
+					<td>
+						<select class="form-control" id = "roomTypeDropdown">
+              <option value="anyRoom">Any Room</option>
+              <option value="standard">Standard Room</option>
+              <option value="deluxe">Deluxe Room</option>
+              <option value="suite">Suite</option>
+              <option value="executive">Executive Room</option>
+              <option value="family">Family Room</option>
+              <option value="accessible">Accessible Room</option>
+						</select>
+					</td>
+					<td>
+						<select class="form-control">
+              <option value="anyBed">Any</option>
+							<option value="king">King</option>
+							<option value="queen">Queen</option>
+							<option value="twin">Twin</option>
+              <option value="sofa-+-king">Sofa + King</option>
+						</select>
+					</td>
+					<td><input type="number" class="form-control"></td>
+					<td><input type="checkbox">&nbspKitchen</td>
+                    <td><button class="btn btn-primary" style = "background-color: black; border-radius: 10px;"onclick="search()">Search</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+    <!--Room options-->
+    <div class="container" id="">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Header</h3>
+              <div>
+                <p class="roomDesc">This is a paragraph below the header</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting roomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+ </body>

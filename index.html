@@ -1,5 +1,3 @@
-
-  </div> 
   <!DOCTYPE html>
   <html>
   <head>
@@ -13,11 +11,12 @@
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
           <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  </head>
+          
 
-  <!-- Fill in header when scrolling -->
+           
+          <!-- Fill in header when scrolling -->
   <script src='script.js'></script>
-
+  </head>
   <body>
 
       <!-- Navbar -->
@@ -31,7 +30,7 @@
        <div id="myMenu">
         <div class="myWrapper">
           <nav>
-          <a href="index.html"><img src= "Assets/letterR.png" height="50" width="50" style= "margin: -15px 0px 0px 0px;"  /></a>
+          <a href="index.html"><img src= "Assets/letterR.png" height="50rem" width="50rem" style= "margin: 15px 0px 0px 15px;"  /></a>
           </nav>
         </div>
       </div>
@@ -41,21 +40,25 @@
          <ul class="nav navbar-nav">
           <li><div class="box-navbar">
             <div class="form-container-navbar">
-              <select class="input-field-navbar">
+              <select class="input-field-navbar" id = "roomTypeHomepage">
                 <option value="" class="room-type-navbar" disabled selected >What type of room would you like?</option>
-                <option value="single">Single Room</option>
-                <option value="double">Double Room</option>
+                <option value="anyRoom">Any Room</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
                 <option value="suite">Suite</option>
+                <option value="executive">Executive Room</option>
+                <option value="family">Family Room</option>
+                <option value="accessible">Accessible Room</option>
+
               </select>
               <input type="date" class="input-field1-navbar" placeholder="Select a date">
-              <button type="submit" class="button-navbar">Submit</button>
+              <button type="submit" class="button-navbar" onclick="searchToRoom()">Submit</button>
             </div>
           </div></li>
-             <li><a href="url">Home</a></li>
-             <li><a href="url">About</a></li>
-             <li><a href="url">Contact</a></li>
-             <li><a href="url">Login</a></li>
-             <li><a href="url">Signup</a></li>
+             <li><a href="booking.html" class = "navbarText">Book a Room</a></li>
+             <li><a href="url" class = "navbarText">Amenities</a></li>
+             <li><a href="url" class = "navbarText">Discover</a></li>
+             <li><a href="url" class = "navbarText" id = "accLink">Log In or Sign Up</a></li>
          </ul>
      </div>
    </div>
@@ -65,27 +68,199 @@
       <h1 class="textAboveInput">Are you ready for your next adventure?</h1>
       <div class="box">
         <div class="form-container">
-          <select class="input-field">
+          <select class="input-field" id = "roomTypeHomepage">
             <option value="" class="room-type" disabled selected >What type of room would you like?</option>
-            <option value="single">Single Room</option>
-            <option value="double">Double Room</option>
-            <option value="suite">Suite</option>
+            <option value="anyRoom">Any Room</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Suite</option>
+                <option value="executive">Executive Room</option>
+                <option value="family">Family Room</option>
+                <option value="accessible">Accessible Room</option>
+
           </select>
           <input type="date" class="input-field1" placeholder="Select a date">
-          <button type="submit" class="button">Submit</button>
+          <button type="submit" class="button" onclick="searchToRoom()">Submit</button>
         </div>
       </div>
       </div>
 
     <!-- First Cover-->
    <div class = "exploreHotel">
+    <div class="hotel-possibilities-container">
     <h1 class = "oneHotelLimitless">One Hotel, Limitless Possibilities</h1>
+    
+  </div>
     <p class = "promotionPara">Escape the hustle and bustle of the big city and find tranquility at Rosalind Lodges. With top-notch amenities and picturesque surroundings, you'll feel rejuvenated in no time. Book your stay now and experience the ultimate getaway.</p>
     <div class="image-container">
-      <img src="https://media.cntraveler.com/photos/589b9996510ec9091d88bfa9/master/w_4374,h_3280,c_limit/room-service-06-Thompson-Chicago.jpg" alt="Image 1" class="rounded-image">
-      <img src="https://img.freepik.com/premium-photo/white-red-wine-glasses-grape-appetizer-board_645697-2971.jpg?w=2000" alt="Image 2" class="rounded-image-vert">
-      <img src="https://cdn.wallpapersafari.com/69/21/YK9ERe.jpg" alt="Image 2" class="rounded-image-vert">
+      <div class="rounded-imageL">
+        <img class="rounded-image-pic" src="https://mountaintopinn.com/wp-content/gallery/luxury-lodge-rooms/Mountain_Top_Resort_luxury_king_200s2_JoannePearson_1800x1125.jpg" />
+        <a href="http://www.google.com">
+        <div class="roomDescrLayer">
+          <p class="roomDescr">Discover the comfort and elegance of our spacious rooms →</p>
+        </div>
+        </a>
+      </div>
+      <div class="rounded-image-vert">
+        <img class="rounded-image-vert-pic" src="https://img.freepik.com/premium-photo/white-red-wine-glasses-grape-appetizer-board_645697-2971.jpg?w=2000" />
+        <a href="http://www.google.com">
+        <div class="foodDescrLayer">
+          <p class="foodDescr">Try out the variety of foods we offer →</p>
+        </div>
+        </a>
+      </div>
+      <div class="rounded-image-vert">
+        <img class="rounded-image-vert-pic" src="https://cdn.wallpapersafari.com/69/21/YK9ERe.jpg" />
+        <a href="http://www.google.com">
+        <div class="natureDescrLayer">
+          <p class="natureDescr"> Experience the tranquility and peace that comes with being in nature →</p>
+        </div>
+        </a>
+      </div>
     </div>    
    </div>
+
+   <!-- Second Cover-->
+  <div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+          <div class="item active">  
+              <div class="carousel-caption">
+                <h3>Go Skiing</h3>
+                <p>Spruce up your vacation with a ski package for you and your friends</p>
+              </div>
+          </div>
+          <div class="item"> 
+              <div class="carousel-caption">
+                <h3>Hike in lush forests</h3>
+                <p>Explore the thousands of acres of protected space North Jersey has to offer</p>
+              </div>
+          </div>
+          <div class="item"> 
+              <div class="carousel-caption">
+                <h3>Get a glimpse of the past</h3>
+                <p>Visit historic sites including the Washingtons's Camp at Morristown and the Victorian Style houses at Mount Tabor</p>
+              </div>
+          </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+      </a>
+  </div>
+  
+
+  <!-- Third Cover-->
+   <div class = "three">
+    <div class="hotel-possibilities-container">
+    <h1 class = "oneHotelLimitless">Options for events of all kind</h1>
+    
+  </div>
+  <a href = "url">
+    <p class = "explorePackage">Explore our group packages →</p>
+  </a>
+    <div class="image-container">
+      <div class="rounded-image1L">
+        <img class="rounded-image-pic" src="https://newyorkrentalbyowner.com/blog/wp-content/uploads/2019/05/large-rentals-for-airbnb-group-vacations3.jpeg" />
+        <a href="http://www.google.com">
+        <div class="roomDescrLayer1">
+          <p class="roomDescr1">Coorperate Retreats →</p>
+        </div>
+        </a>
+      </div>
+      <div class="rounded-image1">
+        <img class="rounded-image-pic" src="https://www.eitfood.eu/files/_1200x590_crop_center-center_none/ResizedFoFConferencePic.jpg" />
+        <a href="http://www.google.com">
+        <div class="roomDescrLayer1">
+          <p class="roomDescr1">Conferences →</p>
+        </div>
+        </a>
+      </div>
+      <div class="rounded-image1">
+        <img class="rounded-image-pic" src="https://thumbs.dreamstime.com/b/wedding-rings-being-exchanged-ceremony-40920002.jpg" />
+        <a href="http://www.google.com">
+        <div class="roomDescrLayer1">
+          <p class="roomDescr1">Weddings →</p>
+        </div>
+        </a>
+      </div>
+    </div>    
+   </div>
+   
+   <!--Contact Us-->
+   <div class="section">
+    <h2 class="section-title">Become a Member</h2>
+    <div class="section-content">
+      <p class = "perks">Gain Access to perks and exclusve discounts and benefits</p>
+      <div class="button-container">
+        <button class="button1">Sign Up</button>
+        <button class="button1">Sign In</button>
+        </div>
+    </div>
+  </div>
+  
+  
+<!--Footer-->
+<footer class="footer-distributed">
+
+      <div class="footer-left">
+
+        <h3>The <span>Rosalind Lodges</span></h3>
+
+        <p class="footer-links">
+          <a href="#" class="link-1">Home</a>
+          
+          <a href="#">Blog</a>
+        
+          <a href="#">Pricing</a>
+        
+          <a href="#">About</a>
+          
+          <a href="#">Faq</a>
+          
+          <a href="#">Contact</a>
+        </p>
+
+        <p class="footer-company-name">Rosalind Holdings LLC © 2023</p>
+      </div>
+
+      <div class="footer-center">
+
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>201 Troy Meadow Rd</span> Parsippany, New Jersey</p>
+        </div>
+
+        <div>
+          <i class="fa fa-phone"></i>
+          <p>+1.973.767.2546</p>
+        </div>
+
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@company.com">support@rosalind-lodges.com</a></p>
+        </div>
+
+      </div>
+
+      <div class="footer-right">
+
+        <p class="footer-company-about">
+          <span>Climate Pledge</span>
+          Our climate pledge is a commitment to take action towards reducing our carbon footprint and mitigating the impact of our operations on the environment. By implementing sustainable practices and supporting renewable energy sources, we aim to contribute to a more sustainable future for our planet.
+        </p>
+
+      </div>
+
+    </footer>
+
+
   </body>
   </html> 

@@ -25,13 +25,25 @@ function searchToRoom() {
   
   // Get the selected room type
   roomType = $('#roomTypeHomepage').val();
-  alert(roomType);
   // Get the selected date
-  date = document.querySelector(".input-field1-navbar").value;
-alert(date);
+  date = $('#checkInDate').val();
   // Store the data in cookie
-  
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + date + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  // Redirect to the booking page
+  window.location.href = "booking.html";
+}
 
+function searchToRoom1() {
+  
+  // Get the selected room type
+roomType = $('#roomTypeHomepage1').val();
+
+  // Get the selected date
+  date = $('#checkInDate').val();
+  // Store the data in cookie
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + date + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
   // Redirect to the booking page
   window.location.href = "booking.html";
 }

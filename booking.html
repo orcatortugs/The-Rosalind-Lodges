@@ -72,7 +72,7 @@
 			<tbody>
 				<tr>
 					<td><input type="date" class="form-control" id = "checkInDate"></td>
-					<td><input type="date" class="form-control"></td>
+					<td><input type="date" class="form-control" id = "checkOutDate"></td>
 					<td>
 						<select class="form-control" id = "roomTypeDropdown">
               <option value="anyRoom">Any Room</option>
@@ -85,7 +85,7 @@
 						</select>
 					</td>
 					<td>
-						<select class="form-control">
+						<select class="form-control" id = "bedType">
               <option value="anyBed">Any</option>
 							<option value="king">King</option>
 							<option value="queen">Queen</option>
@@ -93,16 +93,16 @@
               <option value="sofa-+-king">Sofa + King</option>
 						</select>
 					</td>
-					<td><input type="number" class="form-control"></td>
-					<td><input type="checkbox">&nbspKitchen</td>
-                    <td><button class="btn btn-primary" style = "background-color: black; border-radius: 10px;"onclick="search()">Search</button></td>
+					<td><input type="number" class="form-control" id = "numOfRooms"></td>
+					<td><input type="checkbox" id = "hasKitchen">&nbspKitchen</td>
+          <td><button class="btn btn-primary" style = "background-color: black; border-radius: 10px;"onclick="search()">Search</button></td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
     <!--Room options-->
-    <div class="container" id="">
+    <div class="container" id="StdKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
       <div class="row">
         <div class="col-md-4">
           <img class="roomImg" src="" alt="Room Image">
@@ -110,18 +110,22 @@
         <div class="col-md-8">
           <div class="row">
             <div class="col-md-8" id="Room-name">
-              <h3 class="roomHeader">Header</h3>
+              <h3 class="roomHeader">Standard Room with a King Bed</h3>
               <div>
-                <p class="roomDesc">This is a paragraph below the header</p>
+                <p class="roomDesc">
+                  Offers essential amenities such as one king bed, a bathroom, and storage space for belongings
+                  <BR/>Includes additional features such as a desk, chair, and small seating area
+                  <BR/>Offers a comfortable and functional space
+                </p>
               </div>
             </div>
             <div class="col-md-4 text-right">
-              <h5 class="priceFormatting roomPrice">Subheader</h5>
+              <h5 class="priceFormatting" id = "StdKngRoomPrice">Subheader</h5>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12 text-right">
-              <button type="button" class="btn btn-primary roomSelectFormatting">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="StdKingFunc()">
                 Select
               </button>
             </div>
@@ -129,6 +133,675 @@
         </div>
       </div>
     </div>
-    
-
+    <div class="container" id="StdQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Standard Room With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">Offers essential amenities such as one queen bed, a bathroom, and storage space for belongings
+                  <BR/>Includes additional features such as a desk, chair, and small seating area
+                  <BR/>Offers a comfortable and functional space</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "StdQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="StdQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="StdTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Standard Room With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">Offers essential amenities such as twin beds, a bathroom, and storage space for belongings
+                  <BR/>Includes additional features such as a desk, chair, and small seating area
+                  <BR/>Offers a comfortable and functional space</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "StdTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="StdTwnFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="StdS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Standard Room With Sofa Bed And King Bed</h3>
+              <div>
+                <p class="roomDesc">Offers essential amenities such as twin beds, a bathroom, and storage space for belongings
+                  <BR/>Includes additional features such as a desk, chair, and small seating area
+                  <BR/>Offers a comfortable and functional space</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "StdS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="StdSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="DelKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Deluxe Room With King Bed</h3>
+              <div>
+                <p class="roomDesc">For guests seeking a more elevated hotel experience, the deluxe room with a king bed is an excellent choice. 
+                  <BR/>It offers improved amenities, higher quality furnishings, and a more spacious layout than a standard room.
+                  <BR/>With features such as a separate seating area and work desk, guests can relax and be productive in a luxurious environment.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "DelKngRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="DelKingFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="DelQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Deluxe Room With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">For guests seeking a more elevated hotel experience, the deluxe room with a queen bed is an excellent choice.
+                  <BR/>It offers improved amenities, higher quality furnishings, and a more spacious layout than a standard room.
+                  <BR/>With features such as a separate seating area and work desk, guests can relax and be productive in a luxurious environment.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "DelQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="DelQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="DelTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Deluxe Room With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">For guests seeking a more elevated hotel experience, the deluxe room with twin bed is an excellent choice.
+                  <BR/>It offers improved amenities, higher quality furnishings, and a more spacious layout than a standard room.
+                  <BR/>With features such as a separate seating area and work desk, guests can relax and be productive in a luxurious environment.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "DelTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="DelTwinFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="DelS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Deluxe Sofa Bed and King Bed</h3>
+              <div>
+                <p class="roomDesc">For guests seeking a more elevated hotel experience, the deluxe room with a sofa bed and king bed is an excellent choice.
+                  <BR/>It offers improved amenities, higher quality furnishings, and a more spacious layout than a standard room.
+                  <BR/>With features such as a separate seating area and work desk, guests can relax and be productive in a luxurious environment.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "DelS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="DelSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="SuiKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+    <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Suite with King Bed</h3>
+              <div>
+                <p class="roomDesc">The suite is a luxurious and spacious accommodation option that includes a king-sized bed. 
+                  <BR/>Although priced higher than standard and deluxe rooms, it offers a significant upgrade in terms of space and luxury for guests. 
+                  <BR/>With high-quality furnishings, tasteful decor, and extra amenities such as a separate living area and premium bathroom features, the suite room is an excellent choice for those seeking an indulgent and upscale stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "SuiKngRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="SuiKingFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="SuiQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Suite With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">The suite is a luxurious and spacious accommodation option that includes a queen-sized bed. 
+                  <BR/>Although priced higher than standard and deluxe rooms, it offers a significant upgrade in terms of space and luxury for guests. 
+                  <BR/>With high-quality furnishings, tasteful decor, and extra amenities such as a separate living area and premium bathroom features, the suite room is an excellent choice for those seeking an indulgent and upscale stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "SuiQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="SuiQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="SuiTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Suite With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">The suite is a luxurious and spacious accommodation option that includes twin beds. 
+                  <BR/>Although priced higher than standard and deluxe rooms, it offers a significant upgrade in terms of space and luxury for guests. 
+                  <BR/>With high-quality furnishings, tasteful decor, and extra amenities such as a separate living area and premium bathroom features, the suite room is an excellent choice for those seeking an indulgent and upscale stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "SuiTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="SuiTwinFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="SuiS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Suite With Sofa Bed And King Bed</h3>
+              <div>
+                <p class="roomDesc">The suite is a luxurious and spacious accommodation option that includes a sofa bed and a king bed. 
+                  <BR/>Although priced higher than standard and deluxe rooms, it offers a significant upgrade in terms of space and luxury for guests. 
+                  <BR/>With high-quality furnishings, tasteful decor, and extra amenities such as a separate living area and premium bathroom features, the suite room is an excellent choice for those seeking an indulgent and upscale stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "SuiS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="SuiSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="ExeKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Executive Room with King Bed</h3>
+              <div>
+                <p class="roomDesc">The executive room with a king-sized bed offers a spacious and comfortable accommodation designed to meet the needs of discerning travelers. 
+                  <BR/>This room is typically located on higher floors, providing guests with expansive views of the surrounding area. 
+                  <BR/>It comes equipped with a range of amenities including a separate seating area, large flat-screen TV, high-speed Wi-Fi, and a well-appointed en-suite bathroom, making for a luxurious and comfortable stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "ExeKngRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="ExeKingFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="ExeQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Executive Room With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">The executive room with a queen-sized bed offers a spacious and comfortable accommodation designed to meet the needs of discerning travelers. 
+                  <BR/>This room is located on higher floors, providing guests with expansive views of the surrounding area. 
+                  <BR/>It comes equipped with a range of amenities including a separate seating area, large flat-screen TV, high-speed Wi-Fi, and a well-appointed en-suite bathroom, making for a luxurious and comfortable stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "ExeQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="ExeQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="ExeTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Executive Room With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">The executive room with twin beds offers a spacious and comfortable accommodation designed to meet the needs of discerning travelers. 
+                  <BR/>This room is typically located on higher floors, providing guests with expansive views of the surrounding area. 
+                  <BR/>It comes equipped with a range of amenities including a separate seating area, large flat-screen TV, high-speed Wi-Fi, and a well-appointed en-suite bathroom, making for a luxurious and comfortable stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "ExeTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="ExeTwinFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="ExeS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Executive Room With Sofa Bed And King Bed</h3>
+              <div>
+                <p class="roomDesc">The executive room with a sofa bed and king-sized bed offers a spacious and comfortable accommodation designed to meet the needs of discerning travelers. 
+                  <BR/>This room is typically located on higher floors, providing guests with expansive views of the surrounding area. 
+                  <BR/>It comes equipped with a range of amenities including a separate seating area, large flat-screen TV, high-speed Wi-Fi, and a well-appointed en-suite bathroom, making for a luxurious and comfortable stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "ExeS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="ExeSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="FamKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Family Room With King Bed</h3>
+              <div>
+                <p class="roomDesc">The family room with a king-sized bed provides a comfortable and spacious accommodation for families traveling together. 
+                  <BR/>This room includes a large king-sized bed for adults and additional bedding for children, such as a sofa bed or rollaway bed. 
+                  <BR/>It comes equipped with amenities like a flat-screen TV, high-speed Wi-Fi, coffee and tea-making facilities, a mini-fridge, and a kitchenette. 
+                  <BR/>Overall, a family room with a king-sized bed offers a relaxing and enjoyable place to stay away from home for families on vacation.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "FamKngRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="FamKingFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="FamQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Family Room With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">The family room with a queen-sized bed provides a comfortable and spacious accommodation for families traveling together. 
+                  <BR/>This room includes a large king-sized bed for adults and additional bedding for children, such as a sofa bed or rollaway bed. 
+                  <BR/>It comes equipped with amenities like a flat-screen TV, high-speed Wi-Fi, coffee and tea-making facilities, a mini-fridge, and a kitchenette. 
+                  <BR/>Overall, a family room with a king-sized bed offers a relaxing and enjoyable place to stay away from home for families on vacation.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "FamQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="FamQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="FamTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Family Room With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">The family room with twin beds provides a comfortable and spacious accommodation for families traveling together. 
+                  <BR/>This room includes a large king-sized bed for adults and additional bedding for children, such as a sofa bed or rollaway bed. 
+                  <BR/>It comes equipped with amenities like a flat-screen TV, high-speed Wi-Fi, coffee and tea-making facilities, a mini-fridge, and a kitchenette. 
+                  <BR/>Overall, a family room with a king-sized bed offers a relaxing and enjoyable place to stay away from home for families on vacation.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "FamTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="FamTwinFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="FamS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Family Room With Sofa Bed and King Bed</h3>
+              <div>
+                <p class="roomDesc">The family room with a spfa bed and king bed provides a comfortable and spacious accommodation for families traveling together. 
+                  <BR/>This room includes a large king-sized bed for adults and additional bedding for children, such as a sofa bed or rollaway bed. 
+                  <BR/>It comes equipped with amenities like a flat-screen TV, high-speed Wi-Fi, coffee and tea-making facilities, a mini-fridge, and a kitchenette. 
+                  <BR/>Overall, a family room with a king-sized bed offers a relaxing and enjoyable place to stay away from home for families on vacation.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "FamS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="FamSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="AccKng" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Accessible Room With King Bed</h3>
+              <div>
+                <p class="roomDesc">Guests with disabilities or mobility impairments can enjoy comfortable and convenient accommodation in an accessible room with a king-sized bed. 
+                  <BR/>These rooms are designed with ample space to accommodate mobility aids and accessibility features like wider doorways, lower light switches, and grab bars in the en-suite bathroom. 
+                  <BR/>They also come equipped with amenities such as a flat-screen TV, Wi-Fi, and coffee-making facilities, providing guests with a comfortable and relaxing stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "AccKngRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="AccKingFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="AccQen" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Accesible Room With Queen Bed</h3>
+              <div>
+                <p class="roomDesc">Guests with disabilities or mobility impairments can enjoy comfortable and convenient accommodation in an accessible room with a queen-sized bed. 
+                  <BR/>This room is designed with ample space to accommodate mobility aids and accessibility features like wider doorways, lower light switches, and grab bars in the en-suite bathroom. 
+                  <BR/>It also comes equipped with amenities such as a flat-screen TV, Wi-Fi, and coffee-making facilities, providing guests with a comfortable and relaxing stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "AccQenRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="AccQueenFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="AccTwn" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Accesible Room With Twin Beds</h3>
+              <div>
+                <p class="roomDesc">Guests with disabilities or mobility impairments can enjoy comfortable and convenient accommodation in an accessible room with twin beds. 
+                  <BR/>This room is designed with ample space to accommodate mobility aids and accessibility features like wider doorways, lower light switches, and grab bars in the en-suite bathroom. 
+                  <BR/>It also comes equipped with amenities such as a flat-screen TV, Wi-Fi, and coffee-making facilities, providing guests with a comfortable and relaxing stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "AccTwnRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="AccTwinFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="AccS+K" style="border-bottom: 2px solid #b3b3b3; padding-bottom: 1.5rem; padding-top: 1rem;">
+      <div class="row">
+        <div class="col-md-4">
+          <img class="roomImg" src="" alt="Room Image">
+        </div>
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8" id="Room-name">
+              <h3 class="roomHeader">Accesible Room With Sofa Bed And King Bed</h3>
+              <div>
+                <p class="roomDesc">Guests with disabilities or mobility impairments can enjoy comfortable and convenient accommodation in an accessible room with a sofa bed and king bed. 
+                  <BR/>This room is designed with ample space to accommodate mobility aids and accessibility features like wider doorways, lower light switches, and grab bars in the en-suite bathroom. 
+                  <BR/>It also comes equipped with amenities such as a flat-screen TV, Wi-Fi, and coffee-making facilities, providing guests with a comfortable and relaxing stay.</p>
+              </div>
+            </div>
+            <div class="col-md-4 text-right">
+              <h5 class="priceFormatting" id = "AccS+KRoomPrice">Subheader</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-right">
+              <button type="button" class="btn btn-primary roomSelectFormatting" onclick="AccSKFunc()">
+                Select
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
  </body>

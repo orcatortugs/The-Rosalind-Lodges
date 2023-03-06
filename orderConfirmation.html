@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Reservation Confirmation Page</title>
+    <link rel="stylesheet" href="orderConfirmationStyles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Reservation Confirmation</h1>
+    </header>
+    <div class="container">
+        <section class="confirmation-details">
+            <h2>Reservation Details</h2>
+            <div class="details">
+                <p><strong>Hotel:</strong> Example Hotel</p>
+                <p><strong>Check-In Date:</strong> 15th March 2023</p>
+                <p><strong>Check-Out Date:</strong> 18th March 2023</p>
+                <p><strong>Room Type:</strong> Standard Room with King Bed</p>
+                <p><strong>Number of Guests:</strong> 2 Adults</p>
+            </div>
+        </section>
+        <section class="billing-details">
+            <h2>Billing Information</h2>
+            <div class="details">
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="card">Card Number:</label>
+                        <input type="text" id="card" name="card" required>
+                    </div>
+                    <div>
+                        <label for="expiry">Expiration Date:</label>
+                        <input type="month" id="expiry" name="expiry" required>
+                    </div>
+                    <button type="submit">Confirm Reservation</button>
+                </form>
+            </div>
+        </section>
+        <section class="packages">
+            <h2>Packages</h2>
+            <div class="details">
+                <p><input type="checkbox" name="package1" value="package1">Package 1: $50</p>
+                <p><input type="checkbox" name="package2" value="package2">Package 2: $75</p>
+                <p><input type="checkbox" name="package3" value="package3">Package 3: $100</p>
+            </div>
+        </section>
+        <section class="receipt">
+            <h2>Receipt</h2>
+            <div class="details">
+                <p><strong>Total Price:</strong> $450</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

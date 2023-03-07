@@ -105,6 +105,11 @@ body::-webkit-scrollbar-thumb
   -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.5);
   background:  #000000;
 }
+@media(max-width: 1200px){
+  .form-container-navbar{
+    visibility: hidden;
+  }
+}
 @media(max-width: 720px){
   body{
     background-size: cover;
@@ -518,7 +523,7 @@ body{
     }
 
     .item:nth-child(2) {
-      background: url('http://get2.imglarger.com:8889/results/ldPDxmK7_4x.jpg');
+      background: url('https://wallpapercave.com/wp/wp4668131.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -526,6 +531,12 @@ body{
 
     .item:nth-child(3) {
       background: url('https://static01.nyt.com/images/2019/04/24/realestate/24LIVING-PARSIPPANY-slide-HHG5/24LIVING-PARSIPPANY-slide-HHG5-superJumbo.jpg?quality=75&auto=webp');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+    }
+    .item:nth-child(4) {
+      background: url('https://www.pixelstalk.net/wp-content/uploads/images6/New-York-City-Wallpaper-Desktop.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

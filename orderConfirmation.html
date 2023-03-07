@@ -1,67 +1,200 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Hotel Reservation Confirmation Page</title>
-    <link rel="stylesheet" href="orderConfirmationStyles.css">
-</head>
-<body>
-    <header>
-        <h1>Hotel Reservation Confirmation</h1>
-    </header>
+<html>
+  <head>
+    <title>My Page</title>
+    <link rel="stylesheet" type="text/css" href="orderConfirmationStyles.css" />
+    <script src="orderConfirmationScript.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
     <div class="container">
-        <section class="confirmation-details">
-            <h2>Reservation Details</h2>
-            <div class="details">
-                <p><strong>Hotel:</strong> Example Hotel</p>
-                <p><strong>Check-In Date:</strong> 15th March 2023</p>
-                <p><strong>Check-Out Date:</strong> 18th March 2023</p>
-                <p><strong>Room Type:</strong> Standard Room with King Bed</p>
-                <p><strong>Number of Guests:</strong> 2 Adults</p>
-            </div>
-        </section>
-        <section class="billing-details">
-            <h2>Billing Information</h2>
-            <div class="details">
-                <form>
-                    <div>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div>
-                        <label for="phone">Phone Number:</label>
-                        <input type="tel" id="phone" name="phone" required>
-                    </div>
-                    <div>
-                        <label for="card">Card Number:</label>
-                        <input type="text" id="card" name="card" required>
-                    </div>
-                    <div>
-                        <label for="expiry">Expiration Date:</label>
-                        <input type="month" id="expiry" name="expiry" required>
-                    </div>
-                    <button type="submit">Confirm Reservation</button>
-                </form>
-            </div>
-        </section>
-        <section class="packages">
-            <h2>Packages</h2>
-            <div class="details">
-                <p><input type="checkbox" name="package1" value="package1">Package 1: $50</p>
-                <p><input type="checkbox" name="package2" value="package2">Package 2: $75</p>
-                <p><input type="checkbox" name="package3" value="package3">Package 3: $100</p>
-            </div>
-        </section>
-        <section class="receipt">
-            <h2>Receipt</h2>
-            <div class="details">
-                <p><strong>Total Price:</strong> $450</p>
-            </div>
-        </section>
+      <div class="left-column" style="font-family: Roboto;">
+        <h1>Elevate your experience</h1>
+        <div>
+            <div class="container1">
+                <div class="left-column1">
+                  <img src="https://www.skimag.com/wp-content/uploads/2021/11/K75A8485.jpg" alt="Your Image" />
+                </div>
+                <div class="middle-column1">
+                  <div class="header" id = "headerPackage1">Ultimate Skier's Dream</div>
+                  <div class="paragraph" id = "paragraphPackage1">
+                    <p>*Available from November 27 - March 3* </BR>Experience the thrill of the slopes with our all-inclusive ski package! With top-of-the-line equipment, cozy accommodations, and stunning mountain views, this is the perfect getaway for any winter sports enthusiast.($120)(Equipment + Transportation included)</p>
+                  </div>
+                </div>
+                <div class="right-column1">
+                  <button id = "ski" onclick="ski()">Add</button>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="container1">
+                <div class="left-column1">
+                  <img src="https://wallpapercave.com/wp/wp4668131.jpg" alt="Your Image" />
+                </div>
+                <div class="middle-column1">
+                    <div class="header" id = "headerPackage">Ultimate Nature Enthusiast</div>
+                    <div class="paragraph" id = "paragraphPackage2">
+                      <p>Immerse yourself in nature with our all-inclusive nature package. From guided hikes to wildlife watching, this is the perfect opportunity to reconnect with the great outdoors and rejuvenate your soul. ($25)</p>
+                  </div>
+                </div>
+                <div class="right-column1">
+                  <button id = "nature" onclick="nature()">Add</button>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="container1">
+                <div class="left-column1">
+                  <img src="https://bestofnj.com/wp-content/uploads/2017/02/Feature-Image-e1487159033321.jpg" alt="Your Image" />
+                </div>
+                <div class="middle-column1">
+                    <div class="header" id = "headerPackage3">Ultimate American History Tour</div>
+                    <div class="paragraph" id = "paragraphPackage3">
+                      <p>Step back in time with our all-inclusive historical tour package! From historical battlefields to modern marvels, our knowledgeable guides will take you on a journey through the past, bringing history to life and creating unforgettable memories along the way.($20)(Transportation included)</p>
+                  </div>
+                </div>
+                <div class="right-column1">
+                  <button id = "usHist" onclick="usHist()">Add</button>
+                </div>
+              </div>
+        </div>
+        <div>
+            <div class="container1">
+                <div class="left-column1">
+                  <img src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80" alt="Your Image" />
+                </div>
+                <div class="middle-column1">
+                    <div class="header" id = "headerPackage1">Ultimate tour of NYC</div>
+                    <div class="paragraph" id = "paragraphPackage1">
+                      <p>Experience the excitement of the Big Apple with our all-inclusive NYC tour package! From iconic landmarks to hidden gems, our expert guides will show you the best of New York City while providing insider tips and local knowledge. ($30)(Transportation Included)</p>
+                  </div>
+                </div>
+                <div class="right-column1">
+                  <button id = "nyc"onclick="nyc()">Add</button>
+                </div>
+              </div>
+        </div>
+      </div>
+      <div class="rcFill">
+      </div>
+      <div class="right-column" style="font-family: Roboto;">
+        <h1>Order Summary</h1>
+        <div>
+          <h2 class="sub-header">Hotel Check-in Date:</h2>
+          <p id = "checkInDate">March 10, 2023</p>
+        </div>
+        <div>
+          <h2 class="sub-header">Hotel Check-out Date:</h2>
+          <p id = "checkOutDate">March 12, 2023</p>
+        </div>
+        <div>
+          <h2 class="sub-header">Room Type:</h2>
+          <p id = "roomType">Deluxe</p>
+        </div>
+        <div>
+          <h2 class="sub-header">Price of Room(s):</h2>
+          <p id = "roomPrice">2</p>
+        </div>
+        <div>
+            <h2 class="sub-header">Price of Package(s):</h2>
+            <p id = "packagePrice">2</p>
+          </div>
+          <div>
+            <h2 class="sub-header">Tax:</h2>
+            <p id = "taxPrice">2</p>
+          </div>
+          <div>
+            <h2 class="sub-header">Final Price:</h2>
+            <p id = "finalPrice">2</p>
+          </div>
+      </div>
     </div>
-</body>
+    </div>
+    </div>
+      <div class="billing" style="font-family: Roboto;">
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form action="/action_page.php">
+        
+                <div class="row">
+                  <div class="col-50">
+                    <h3>Billing Address</h3>
+                    <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" id="email" name="email" placeholder="john@example.com">
+                    <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                    <input type="text" id="city" name="city" placeholder="New York">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="state">State</label>
+                        <input type="text" id="state" name="state" placeholder="NY">
+                      </div>
+                      <div class="col-50">
+                        <label for="zip">Zip</label>
+                        <input type="text" id="zip" name="zip" placeholder="10001">
+                      </div>
+                    </div>
+                  </div>
+        
+                  <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname"></label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+        
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" id="expyear" name="expyear" placeholder="2018">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" name="cvv" placeholder="352">
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+                <label>
+                </label>
+                <a href="bookingInfo.html" class="btn confirm-button">Confirm and Book</a>
+              </form>
+            </div>
+          </div>
+        
+          <div class="col-25">
+            <div class="container">
+              <h4>
+                <span class="price" style="color:black">
+                  <i class="fa fa-shopping-cart"></i>
+                  <b></b>
+                </span>
+              </h4>
+              <p><a href="#"> </a> <span class="price"></span></p>
+              <p><a href="#"> </a> <span class="price"></span></p>
+              <p><a href="#"></a> <span class="price"></span></p>
+              <p><a href="#"></a> <span class="price"></span></p>
+              <hr>
+              <p> <span class="price"><b></b></span></p>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+  </body>
 </html>

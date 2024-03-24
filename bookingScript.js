@@ -148,12 +148,12 @@ function search() {
     }
 
   //Assign Cookies
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
   //Calculate length of stay
  var aDay = 86400000;
 var lengthOfStay = Math.floor(
@@ -342,13 +342,13 @@ function StdKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -366,13 +366,13 @@ function StdQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -390,13 +390,13 @@ function StdTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -414,13 +414,13 @@ function StdSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -438,13 +438,13 @@ function DelKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -462,13 +462,13 @@ function DelQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -486,13 +486,13 @@ function DelTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -510,13 +510,13 @@ function DelSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html"; 
 }
@@ -534,13 +534,13 @@ function SuiKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -558,13 +558,13 @@ function SuiQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -582,13 +582,13 @@ function SuiTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -606,13 +606,13 @@ function SuiSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -630,13 +630,13 @@ function ExeKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -654,13 +654,13 @@ function ExeQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -678,13 +678,13 @@ function ExeTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -702,13 +702,13 @@ function ExeSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -726,13 +726,13 @@ function FamKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -750,13 +750,13 @@ function FamQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -774,13 +774,13 @@ function FamTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -798,13 +798,13 @@ function FamSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -822,13 +822,13 @@ function AccKingFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -846,13 +846,13 @@ function AccQueenFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -870,13 +870,13 @@ function AccTwinFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }
@@ -894,13 +894,13 @@ function AccSKFunc(){
     price += priceTemp.substring(i,i+1);
     i++;
   }
-  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+  document.cookie = "checkInDate=" + checkInDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "checkOutDate=" + checkOutDate + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "roomType=" + roomType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "bedType=" + bedType + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "numOfRooms=" + numOfRooms + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "hasKitchen=" + hasKitchen + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+  document.cookie = "price=" + price + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
   window.location.href = "orderConfirmation.html";
 }

@@ -12,10 +12,10 @@ var usHistNabled = false;
 var nycNabled = false;
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.cookie = "natureNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-    document.cookie = "skiNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-    document.cookie = "usHistNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
-    document.cookie = "nycNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "natureNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+    document.cookie = "skiNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+    document.cookie = "usHistNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
+    document.cookie = "nycNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     let x = document.cookie;
     x = decodeURIComponent(x);
     let ca = x.split(";");
@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById("taxPrice").innerHTML = "$" +  Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * .06625)/100;
     document.getElementById("finalPrice").innerHTML = "$" + Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
     var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
 }, false);
 function ski(){
@@ -100,38 +100,38 @@ function ski(){
         priceOfPackage += 120;
         skiNabled = true
         document.getElementById("ski").innerHTML = "Remove";
-        document.cookie = "skiNabled=" + "true" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "skiNabled=" + "true" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     else{
         priceOfPackage -=120;
         skiNabled = false;
         document.getElementById("ski").innerHTML = "Add";
-        document.cookie = "skiNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "skiNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     document.getElementById("packagePrice").innerHTML = "$" + priceOfPackage;    
     document.getElementById("taxPrice").innerHTML = "$" +  Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * .06625)/100;
     document.getElementById("finalPrice").innerHTML = "$" + Math.round(100 * (parseFloat(roomPrice) + priceOfPackage) * 1.06625) / 100;
     var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 }
 function nature() {
     if(!natureNabled){
         priceOfPackage += 25;
         natureNabled = true
         document.getElementById("nature").innerHTML = "Remove";
-        document.cookie = "natureNabled=" + "true" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "natureNabled=" + "true" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     else{
         priceOfPackage -=25;
         natureNabled = false;
         document.getElementById("nature").innerHTML = "Add";
-        document.cookie = "natureNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "natureNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     document.getElementById("packagePrice").innerHTML = "$" + priceOfPackage;    
     document.getElementById("taxPrice").innerHTML = "$" +  Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * .06625)/100;
     document.getElementById("finalPrice").innerHTML = "$" + Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
     var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 
 }
 function usHist(){
@@ -140,19 +140,19 @@ function usHist(){
         usHistNabled = true;
         document.getElementById("usHist").innerHTML = "Remove";
         var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-        document.cookie = "usHistNabled=" + "true" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";}
+        document.cookie = "usHistNabled=" + "true" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";}
     else{
         priceOfPackage -=20;
         usHistNabled = false;
         document.getElementById("usHist").innerHTML = "Add";
         var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-        document.cookie = "usHistNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "usHistNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     document.getElementById("packagePrice").innerHTML = "$" + priceOfPackage;    
     document.getElementById("taxPrice").innerHTML = "$" +  Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * .06625)/100;
     document.getElementById("finalPrice").innerHTML = "$" + Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
     var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 }
 function nyc(){
     if(!nycNabled){
@@ -160,17 +160,17 @@ function nyc(){
         nycNabled = true;
         document.getElementById("nyc").innerHTML = "Remove";
         var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "nycNabled=" + "true" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "nycNabled=" + "true" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     else{
         priceOfPackage -=20;
         nycNabled = false;
         document.getElementById("nyc").innerHTML = "Add";
-        document.cookie = "nycNabled=" + "false" + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+        document.cookie = "nycNabled=" + "false" + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
     }
     document.getElementById("packagePrice").innerHTML = "$" + priceOfPackage;    
     document.getElementById("taxPrice").innerHTML = "$" +  Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * .06625)/100;
     document.getElementById("finalPrice").innerHTML = "$" + Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
     var finalPrice = Math.round(100*(parseFloat(roomPrice)+priceOfPackage) * 1.06625)/100;
-    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2024 00:00:00 UTC; path=/;";
+    document.cookie = "finalPrice=" + finalPrice + "; expires=Thu, 01 Jan 2025 00:00:00 UTC; path=/;";
 }
